@@ -1,0 +1,19 @@
+This Assignment had 3 parts:
+
+Part A:
+1. Make a function that converts text to uppercase. Use: "-u" as an argument.
+2. Make a function that converts text to lowercase. Use: "-l" as an argument.
+3. Make a function that converts text to the opposite case by character. 
+    Use: "-s" as an argument.
+4. Make the default case convert to uppercase. 
+
+Part B:
+1. Program Takes 3 arguments: 
+    1. String to operate on
+    2. Character to start at
+    3. Character to end at
+2. Print from start character to end character. (Fractional part)
+3. Output: (fraction with /) of (original string) is (fractional string)
+
+Part C:
+

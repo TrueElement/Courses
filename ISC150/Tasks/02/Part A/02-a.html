@@ -1,0 +1,180 @@
+<html><head>
+<title>ISC 150 Intro to Scripting - Task #2 part A</title>
+
+<script type="text/javascript" src="../style/search.js"></script>
+<script type="text/javascript" src="../style/popup.js"></script>
+<link rel="stylesheet" type="text/css" title="main style sheet" href="../style/white.css" />
+
+<style type="text/css">
+  td {
+    vertical-align: top;
+  }
+  li {
+   border:1px solid black;
+   margin:5px 0 5px 0;
+  }
+</style>
+
+<script type="text/javascript">
+var od = {
+    focus: function(node) {
+        node.style.backgroundColor = "skyblue";
+    },
+    blur: function(node) {
+        node.style.backgroundColor = "white";
+    }
+}
+</script>
+
+</head>
+<body 
+      bgcolor="#ffffff" text="#000000" vlink="#0000ff" link="#0000ff"
+>
+
+<div align="left">
+<p>
+<h1>Task 2 part A &mdash; one way to create/update Web pages</h1>
+</div>
+
+<ul type="square">
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Use "putty" to get a <b>secure login</b> to <tt>moxie.cs.oswego.edu</tt>.
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Once aboard <tt>moxie</tt>, type the following commands to:
+<br>
+a) make sure you are in your <b>home directory</b>
+<br>
+b) change into your <tt>public_html</tt> directory
+<br>
+c) edit a file named <tt>index.html</tt> in that directory
+</p><p>
+<pre>
+cd
+cd public_html
+emacs -nw index.html
+</pre>
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Type the following into the file <tt>index.html</tt>.
+<div class="source">
+<pre>
+<p>
+&lt;HTML&gt;
+  &lt;HEAD&gt;
+    &lt;TITLE&gt;Home Page - alpha version 0.1&lt;/TITLE&gt;
+  &lt;/HEAD&gt;
+  &lt;BODY&gt;
+    &lt;DIV&gt;
+    &lt;P&gt;
+    &lt;h1&gt;Home Page of <i>YOUR NAME HERE</i>&lt;/h1&gt;
+    &lt;/P&gt;
+    &lt;/DIV&gt;
+
+    &lt;DIV&gt;
+    &lt;P&gt;
+    &lt;h2&gt;My Courses&lt;/h2&gt;
+    &lt;/P&gt;
+
+
+    &lt;/DIV&gt;
+
+  &lt;/BODY&gt;
+&lt;/HTML&gt;
+</pre>
+</div>
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Save the file by typing:<br>
+<tt>Control-X Control-S</tt><br>
+<blockquote>
+Hold the control key down, don't let it up;<br>
+push and release the 'X' key, then push and release the 'S' key;<br>
+now let the control key up.
+</blockquote>
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Exit the <tt>emacs</tt> editor by typing:<br>
+<tt>Control-X Control-C</tt><br>
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Use <tt>chmod</tt> to set <b>permissions</b> on the file
+<tt>index.html</tt>.
+<br>
+<tt>chmod go+r index.html</tt>.
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Test the results by typing:<br>
+<tt>http://moxie.cs.oswego.edu/~<i>YOUR-USER-ID</i>/index.html</tt><br>
+into a browser <b>address field</b>.<br>
+<b>Note</b> that there's a <b>tilde</b> before your user id in the <b>URL</b>.
+</li>
+</p><p>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Note that you can also type:<br>
+<tt>http://moxie.cs.oswego.edu/~<i>YOUR-USER-ID</i>/</tt><br>
+without the <tt>index.html</tt> and it the loads the
+file named <tt>index.html</tt>. Why do you think this works?
+</li>
+</p><p>
+
+
+</ul>
+</p><p>
+
+</body>
+</html>
+

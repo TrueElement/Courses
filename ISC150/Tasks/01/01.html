@@ -1,0 +1,127 @@
+<html><head>
+<title>ISC 150 Intro to Scripting - Tasks #1</title>
+
+<script type="text/javascript" src="../style/search.js"></script>
+<script type="text/javascript" src="../style/popup.js"></script>
+<link rel="stylesheet" type="text/css" title="main style sheet" href="../style/white.css" />
+
+<style type="text/css">
+  td {
+    vertical-align: top;
+  }
+  li {
+   border:1px solid black;
+   margin:5px 0 5px 0;
+  }
+</style>
+
+<script type="text/javascript">
+var od = {
+    focus: function(node) {
+        node.style.backgroundColor = "skyblue";
+    },
+    blur: function(node) {
+        node.style.backgroundColor = "white";
+    }
+}
+</script>
+
+</head>
+<body 
+      bgcolor="#ffffff" text="#000000" vlink="#0000ff" link="#0000ff"
+>
+
+<div align="left">
+<p>
+<h1>Task 1</h1>
+</div>
+
+<ul type="square">
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="1"
+>
+Use "putty" to get a <b>secure login</b> to <tt>moxie.oswego.edu</tt>.
+</p><p>
+</li>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="2"
+>
+Use <tt>mkdir</tt> to create the <b>directory</b> <tt>public_html</tt>.
+(Directories are often called <b>folders</b>, especially in GUI environments.)
+<pre>
+mkdir public_html
+</pre>
+</p><p>
+</li>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="2"
+>
+Use <tt>chmod</tt> to set <b>permissions</b> on the directory you've
+just created and on your <b>home directory</b>.
+<b>Note</b> the dot (period) at the end of the first line.
+(There's a space before the dot.)
+<pre>
+chmod go+rx <b>.</b>
+chmod go+rx public_html
+</pre>
+</p><p>
+</li>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="2"
+>
+Use <tt>echo</tt> to create a <b>file</b> named <tt>hello.html</tt> in the directory <tt>public_html</tt>.
+<b>Note</b> the single quotes around the hello world phrase.
+<pre>
+cd public_html
+echo '&lt;h1&gt;Hello World!&lt;/h1&gt;' &gt; hello.html
+</pre>
+</p><p>
+</li>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="2"
+>
+Use <tt>chmod</tt> to set <b>permissions</b> on the file <tt>hello.html</tt>.
+<pre>
+chmod go+r hello.html
+</pre>
+</p><p>
+</li>
+
+<li
+       onclick="this.focus()"
+       onfocus="od.focus(this);"
+       onblur="od.blur(this);"
+       tabindex="2"
+>
+See if you can read the message by accessing the page in your Web browser.
+<pre>
+http://moxie.cs.oswego.edu/~<i>your-user-id</i>/hello.html
+</pre>
+</p><p>
+</li>
+
+</ul>
+
+
+</body>
+</html>
+
